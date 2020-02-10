@@ -15,15 +15,35 @@
 
 int dominantIndex(int* nums, int numsSize)
 {
+  if(numsSize == 0) return -1;
+  if(numsSize == 1) return 0;
 
+  int dominantIndex = 0;
 
-  return -1;
+  for(int i = 0; i < numsSize; i++) {
+    if(nums[i] > nums[dominantIndex]){
+      dominantIndex = i;
+    }
+  }
+
+  for(int i = 0; i < numsSize; i++) {
+    if(2*nums[i] > nums[dominantIndex] && nums[i] != nums[dominantIndex]) {
+       printf("%d\n", nums[i]);
+       return -1;
+    }
+  }
+
+  return dominantIndex;
 }
+
 
 int main()
 {
   
 
+  int arr[] = {3, 6, 1, 0};
+  int result = dominantIndex(arr, sizeof(arr) / sizeof(int));
+  printf("%d\n", result);
 
   return 0;
 }
