@@ -20,6 +20,7 @@ int* plusOne(int *digits, int digitsSize, int* returnSize)
       printf("[Error]: Please check your array and returnSize for a NULL value\n");
       return NULL;
   }
+
   int i = digitsSize - 1;
 
   while(i>=0) {
@@ -28,7 +29,6 @@ int* plusOne(int *digits, int digitsSize, int* returnSize)
       *returnSize = digitsSize; 
       return digits;
     }
-
     else {
       digits[i] = 0;
       i--; 
@@ -40,39 +40,13 @@ int* plusOne(int *digits, int digitsSize, int* returnSize)
   *returnSize = digitsSize + 1;
   newDigits[0] = 1;
 
-  for(int i = 1; i<digitsSize; i++) {
+  for(int i = 1; i<digitsSize+1; i++) {
     newDigits[i] = digits[i-1];
   }
 
   return newDigits;
 }
 
-int* plusOne_v2(int* digits, int digitsSize, int* returnSize) {
-    int n = digitsSize-1;
-    while(n >= 0)
-    {
-        if(digits[n] < 9)
-        {
-            digits[n]++;
-            *returnSize = digitsSize;
-            return digits;
-        }else
-        {
-            digits[n] = 0;
-            n--;
-        }
-    }
-    
-    int* newdigit = (int*)malloc((digitsSize+1) * sizeof(int));
-    newdigit[0] = 1;
-    for(int i = 1; i < (digitsSize+1); i++)
-    {
-        newdigit[i] = digits[i-1];
-    }
-    *returnSize = digitsSize+1;
-    return newdigit;
-
-}
 
 //TODO: Move this to utils file.
 void print_arr(int *digits, int* size)
@@ -94,8 +68,8 @@ int main()
 {
   /* https://stackoverflow.com/questions/8316030/iterate-a-dynamically-allocated-array */
 
-  /* can't find out how large the allocated space is. */
-  /* Solution is must keep track of the size by yourself. */
+  /* Cannot find the size of a dynamically allocated array. */
+  /* So solution is to keep track of the size by yourself (by using a ptr like returnSize). */
   /* All malloc gives you is a ptr to a unditerminate amount of memory ! */
 
   int* numbers = (int*)malloc(3 * sizeof(int));
@@ -106,14 +80,8 @@ int main()
   numbers[1] = 5;
   numbers[2] = 9;
 
-  /* printf("sizeof(numbers) is: %d\n", sizeof(numbers)); */
-  /* printf("sizeof(numbers)/sizeof(numbers[0])is: %d\n", sizeof(numbers)/sizeof(numbers[0])); */
-
-
   print_arr(numbers, returnSize);
-
   int *newDigits = plusOne(numbers, 3, returnSize);
-
   print_arr(newDigits, returnSize);
 
   return 0;
