@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* Problem 66 */
+
 /** * Note: The returned array must be malloced, assume caller calls free(). */
 
 /* Input: [1,2,3] */
@@ -82,7 +84,9 @@ int main()
 
   print_arr(numbers, returnSize);
   int *newDigits = plusOne(numbers, 3, returnSize);
-  print_arr(newDigits, returnSize);
+  print_arr(numbers, returnSize);
+
+  free(newDigits);
 
   return 0;
 }
