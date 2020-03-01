@@ -44,9 +44,8 @@ int pivotIndex(int* nums, int numSize)
 int main()
 {
 
-  int arr[] = {-1, -1, -1, 0, 1, 1};
-  int sizeOfArr = sizeof(arr) / sizeof(int);
-  int value = pivotIndex(arr, sizeOfArr);
+  vector<int> arr{ 10, 20, 30 }; 
+  int value = pivotIndex(arr);
 
   printf("%d\n", value);
 
