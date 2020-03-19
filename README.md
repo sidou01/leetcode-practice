@@ -1,5 +1,5 @@
 # Leetcode Problems
-This repo is mainly used as a refrence of implementations of leetcode problems in different programming languages sorted by data structure.
+This repo is mainly used as a refrence of implementations for leetcode problems in different programming languages sorted by data structure.
 
 ## Arrays
 | Problem           | leetcode number| Complexity
@@ -12,5 +12,4 @@ This repo is mainly used as a refrence of implementations of leetcode problems i
 | Find Numbers with Even Number of Digits|1295|Unknown
 # Disclaimer
 The content in this repo showcases my journey of learning Algorithms and Data Structures
-which means the solutions in this repo are not optimal. So if anyone likes to contribute a better solution it would be deeply
-appreaciated.
+which means the solutions in this repo are probably not optimal and do not follow the best practices. So if anyone likes to improve a solution or contribute a better one it would not only help me but also anyone who comes across this repo.
