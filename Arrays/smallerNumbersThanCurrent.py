@@ -1,5 +1,6 @@
 
-# Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
+# Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it.
+# That is, for each nums[i] you have to counter the number of valid j's such that j != i and nums[j] < nums[i].
 
 # Return the answer in an array.
 
@@ -19,6 +20,22 @@
 
 from typing import List
 
+#optimize this solution cuz it sucks (complexity is: N*N)
 class Solution:
     def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        # counter the number of js such as j!=i and nums[j] < nums[i].
 
+        counter = 0
+        output = []
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                if j != i and nums[j] < nums[i]:
+                    counter += 1
+            output.append(counter)
+            counter = 0
+
+        return output
+
+
+s = Solution()
+print("Output:", s.smallerNumbersThanCurrent([6,5,4,8]))

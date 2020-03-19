@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 # Problem 1313
 
 # We are given a list nums of integers representing a list compressed with run-length encoding.
@@ -29,7 +26,6 @@ class Solution:
         output = []
         for i in range(0, len(self.nums) - 1, 2):
             for j in range(self.nums[i]):
-                print(i)
                 output.append(self.nums[i+1])
             
             i += 2
