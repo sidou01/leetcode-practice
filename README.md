@@ -2,7 +2,7 @@
 This repo is mainly used as a reference of implementations for leetcode problems in different programming languages sorted by data structure.
 
 ## Arrays
-| Problem           | leetcode number| Diffculty
+| Problem           | Link| Diffculty
 | ------------------|--------- | -----|
 | Decompress Run-Length Encoded List     | [#1313](https://leetcode.com/problems/decompress-run-length-encoded-list)     | Easy 
 | Largest Number At Least Twice of Others        | [#747](https://leetcode.com/problems/largest-number-at-least-twice-of-others)      | Easy
