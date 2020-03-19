@@ -1,5 +1,5 @@
 # Leetcode Problems
-This repo is mainly used as a refrence of implementations for leetcode problems in different programming languages sorted by data structure.
+This repo is mainly used as a reference of implementations for leetcode problems in different programming languages sorted by data structure.
 
 ## Arrays
 | Problem           | leetcode number| Complexity
