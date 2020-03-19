@@ -18,7 +18,7 @@ using namespace std;
 class Solution
 {
   public:
-    int pivotIndex(vector<int>& nums)
+    int pivotIndex(vector<int> nums)
     {
       if(nums.size() == 0) return -1;
       if(nums.size() == 1) return 0;
@@ -42,6 +42,15 @@ class Solution
       return -1;
     }
 };
+
+void print_arr(vector<int> nums)
+{
+  cout << "----Printing values of an array----" << endl;
+  for(int i = 0; i < nums.size(); i++) {
+    cout << nums[i] << " ";
+  }
+  cout << endl;
+}
 
 int main()
 {
