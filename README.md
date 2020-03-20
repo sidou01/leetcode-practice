@@ -4,14 +4,14 @@ This repo is mainly used as a reference of implementations for leetcode problems
 
 ## Arrays
 
-| Problem                                              | leetcode number | Diffculty |
-| ---------------------------------------------------- | --------------- | --------- |
-| Decompress Run-Length Encoded List                   | 1313            | Easy      |
-| Largest Number At Least Twice of Others              | 747             | Easy      |
-| Plus One                                             | 66              | Easy      |
-| Find Pivot Index                                     | 724             | Easy      |
-| How Many Numbers Are Smaller Than the Current Number | 1365            | Easy      |
-| Find Numbers with Even Number of Digits              | 1295            | Easy      |
+| Problem                                              | Link                                                                                        | Diffculty |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------- | --------- |
+| Decompress Run-Length Encoded List                   | [#1313](https://leetcode.com/problems/decompress-run-length-encoded-list)                   | Easy      |
+| Largest Number At Least Twice of Others              | [#747](https://leetcode.com/problems/largest-number-at-least-twice-of-others)               | Easy      |
+| Plus One                                             | [#66](https://leetcode.com/problems/plus-one)                                               | Easy      |
+| Find Pivot Index                                     | [#724](https://leetcode.com/problems/find-pivot-index)                                      | Easy      |
+| How Many Numbers Are Smaller Than the Current Number | [#1365](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number) | Easy      |
+| Find Numbers with Even Number of Digits              | [#1295](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)             | Easy      |
 
 # Disclaimer
 
