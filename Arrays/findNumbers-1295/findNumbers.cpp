@@ -28,9 +28,24 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
 class Solution {
-public:
-    int findNumbers(vector<int>& nums) {
-        
-    }
+  public:
+      int findNumbers(vector<int>& nums) {
+	  int counter = 0;
+	  
+	  for(int i=0; i < nums.size(); i++) {
+	      if(to_string(nums[i]).size() % 2 == 0)
+		  counter++;
+	  }
+	  return counter;
+      }
 };
+
+int main()
+{
+  vector<int> input_arr = {12, 345, 2, 6, 7896};
+  Solution s = Solution();
+  cout << "output: " << s.findNumbers(input_arr) << endl;
+  return 0;
+}
