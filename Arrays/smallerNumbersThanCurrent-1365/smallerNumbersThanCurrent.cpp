@@ -51,6 +51,7 @@ class Solution {
     }
     vector<int> smallerNumbersThanCurrent_v2(vector<int>& nums) {
       /* TODO: sort the array first */
+      return {};
     }
 };
 
@@ -58,9 +59,9 @@ int main()
 {
 
   Solution solution;
-  vector<int> list{6,5,4,8};
-  vector<int> output = solution.smallerNumbersThanCurrent(list);
-  print_arr(output);
+  vector<int> input_arr{6,5,4,8};
+  vector<int> output_arr = solution.smallerNumbersThanCurrent(input_arr);
+  print_arr(output_arr);
 
   return 0;
 }
