@@ -11,7 +11,9 @@ This repo is mainly used as a reference of implementations for leetcode problems
 | Plus One                                             | [#66](https://leetcode.com/problems/plus-one)                                               | Easy      |
 | Find Pivot Index                                     | [#724](https://leetcode.com/problems/find-pivot-index)                                      | Easy      |
 | How Many Numbers Are Smaller Than the Current Number | [#1365](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number) | Easy      |
-| Find Numbers with Even Number of Digits              | [#1295](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)             | Easy      |
+| Find Numbers with Even Number of Digits              | [#1295](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)             | Easy
+| Plus One              | [#1](https://leetcode.com/problems/two-sum) | Easy
+
 
 # Disclaimer
 
