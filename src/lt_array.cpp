@@ -11,7 +11,7 @@ void print_arr(vector<int>& nums)
 {
     cout << "----Printing values of an array----" << endl;
     if(nums.size() > 0) {
-        for(int i = 0; i < nums.size(); i++) {
+        for(size_t i = 0; i < nums.size(); i++) {
             cout << nums[i] << " ";
         }
         cout << endl;
@@ -28,20 +28,20 @@ void print_arr(vector<int>& nums)
  */
 vector<int> twoSum(vector<int> nums, int target)
 {
-    vector<int> output;
+  vector<int> output;
 
-    for(int i=0; i<nums.size(); i++) {
+  for(vector<int>::size_type i=0; i !=nums.size(); i++) {
 
-        for(int j = i + 1; j < nums.size(); j++) {
+      for(int j = i + 1; j < nums.size(); j++) {
 
-            if(nums[i] + nums[j] == target) {
-                output.push_back(i);
-                output.push_back(j);
-                return output;
-            }
-        }
-    }
-    return output;
+	  if(nums[i] + nums[j] == target) {
+	      output.push_back(i);
+	      output.push_back(j);
+	      return output;
+	  }
+      }
+  }
+  return output;
 }
 
 /**
@@ -60,7 +60,7 @@ vector<int> smallerNumbersThanCurrent(vector<int>& nums)
     int counter = 0;
     vector<int> output;
 
-    for(int i=0; i < nums.size(); i++) {
+    for(vector<int>::size_type i=0; i != nums.size(); i++) {
         for(int j = 0; j < nums.size(); j++) {
             if(j != i && nums[j] < nums[i]) {
                 counter++;
@@ -88,7 +88,7 @@ int pivotIndex(vector<int> nums)
 
     for(int i = 1; i < nums.size(); i++) { afterPivot += nums[i]; }
 
-    for(int j=0; j < nums.size(); j++) {
+    for(vector<int>::size_type j=0; j != nums.size(); j++) {
         if(j > 0) {
             beforePivot += nums[j-1];
             afterPivot -= nums[j];
@@ -100,9 +100,9 @@ int pivotIndex(vector<int> nums)
 
 int findNumbers(vector<int>& nums)
 {
-	  int counter = 0;
-	  for(int i=0; i < nums.size(); i++) { if(to_string(nums[i]).size() % 2 == 0) { counter++; } }
-	  return counter;
+    int counter = 0;
+    for(int i=0; i < nums.size(); i++) { if(to_string(nums[i]).size() % 2 == 0) { counter++; } }
+    return counter;
 }
 
 int dominantIndex(vector<int>& nums)
@@ -113,7 +113,7 @@ int dominantIndex(vector<int>& nums)
     int dominantIndex = 0;
     for(int i = 0; i < nums.size(); i++) { if(nums[i] > nums[dominantIndex]){ dominantIndex = i; } }
 
-    for(int i = 0; i < nums.size(); i++) {
+    for(vector<int>::size_type i = 0; i != nums.size(); i++) {
         if(2*nums[i] > nums[dominantIndex] && nums[i] != nums[dominantIndex]) {
             printf("%d\n", nums[i]);
             cout << nums[i] << endl;
@@ -126,5 +126,19 @@ int dominantIndex(vector<int>& nums)
 vector<int> createTargetArray(vector<int>& nums, vector<int>& index)
 {
     vector<int> target;
+    for(vector<int>::size_type i = 0; i != nums.size(); i++) { target[index[i]] = nums[i]; }
     return target;
+}
+
+/* space complexity O(1) and time complexity is O(n) */
+int singleNumber(vector<int>& nums)
+{
+  if(nums.size() == 1) { return nums[0]; }
+
+  int returnValue = 0;
+  for(auto const& value: nums) {
+    returnValue ^= value;
+  }
+
+  return returnValue;
 }
