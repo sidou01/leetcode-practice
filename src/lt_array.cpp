@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -116,7 +117,6 @@ int dominantIndex(vector<int>& nums)
     for(vector<int>::size_type i = 0; i != nums.size(); i++) {
         if(2*nums[i] > nums[dominantIndex] && nums[i] != nums[dominantIndex]) {
             printf("%d\n", nums[i]);
-            cout << nums[i] << endl;
             return -1;
         }
     }
@@ -141,4 +141,25 @@ int singleNumber(vector<int>& nums)
   }
 
   return returnValue;
+}
+
+bool isHappy(int number) //2
+{
+  if(number == 1) return true;
+  int result = 0;
+    while(true) {
+      while(number != 0) {
+	result += (number % 10) * (number % 10);
+	number = number / 10;
+      }
+
+      if(result >= 1 && result <= 9) {
+	if(result == 1 || result == 7) { return true; }
+	else { return false; }
+      }
+
+      number = result;
+      result = 0;
+    }
+    return true;
 }

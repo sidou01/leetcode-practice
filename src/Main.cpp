@@ -4,11 +4,10 @@
 
 using namespace std;
 
+
 int main()
 {
-    vector<int> nums = {4,1,2,1,2};
-    // std::cout << "Value: " << value << std::endl;
-    int returnValue = singleNumber(nums);
-    cout << "Single Number: " << returnValue << '\n';
-    return 0;
+  bool isH = isHappy(2);
+  cout << "isHappy: " << (isH == 1 ? "true" : "false") << '\n';
+  return 0;
 }

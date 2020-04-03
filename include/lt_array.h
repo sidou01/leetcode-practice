@@ -1,6 +1,7 @@
 #include <vector>
 
 void print_arr(std::vector<int>& nums);
+bool isHappy(int number);
 int pivotIndex(std::vector<int> nums);
 int findNumbers(std::vector<int>& nums);
 int dominantIndex(std::vector<int>& nums);

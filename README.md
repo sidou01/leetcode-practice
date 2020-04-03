@@ -14,6 +14,7 @@ This repo is mainly used as a reference of implementations for leetcode problems
 | Find Numbers with Even Number of Digits              | [#1295](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)             | Easy      |
 | Plus One                                             | [#1](https://leetcode.com/problems/two-sum)                                                 | Easy      |
 | Single Number                                        | [#136](https://leetcode.com/problems/single-number)                                         | Easy      |
+| Happy Number                                         | [#202](https://leetcode.com/problems/happy-number)                                          | Easy      |
 
 # Disclaimer
 
