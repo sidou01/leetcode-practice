@@ -15,6 +15,7 @@ This repo is mainly used as a reference of implementations for leetcode problems
 | Plus One                                             | [#1](https://leetcode.com/problems/two-sum)                                                 | Easy      |
 | Single Number                                        | [#136](https://leetcode.com/problems/single-number)                                         | Easy      |
 | Happy Number                                         | [#202](https://leetcode.com/problems/happy-number)                                          | Easy      |
+| Move Zeroes                                          | [#283](https://leetcode.com/problems/move-zeroes/)                                          | Easy      |
 
 # Disclaimer
 

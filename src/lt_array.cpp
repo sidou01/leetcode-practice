@@ -145,7 +145,7 @@ int singleNumber(vector<int>& nums)
 
 bool isHappy(int number)
 {
-  if(number == 1) return true;
+  if(number == 1) { return true; }
   int result = 0;
     while(true) {
       while(number != 0) {
@@ -168,7 +168,6 @@ bool isHappy(int number)
 void moveZeroes(vector<int>& nums)
 {
   unsigned count = 0, i = 0;
-
   while(i < nums.size()) {
     if(nums[i] == 0) {
       nums.erase(nums.begin() + i);
@@ -180,7 +179,6 @@ void moveZeroes(vector<int>& nums)
   for(int i = 0; i < count; i++) {
     nums.push_back(0);
   }
-
 }
 
 int maxSubArray(vector<int>& nums)
