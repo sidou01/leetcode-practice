@@ -143,7 +143,7 @@ int singleNumber(vector<int>& nums)
   return returnValue;
 }
 
-bool isHappy(int number) //2
+bool isHappy(int number)
 {
   if(number == 1) return true;
   int result = 0;
@@ -162,4 +162,28 @@ bool isHappy(int number) //2
       result = 0;
     }
     return true;
+}
+
+/* O(n) solution */
+void moveZeroes(vector<int>& nums)
+{
+  unsigned count = 0, i = 0;
+
+  while(i < nums.size()) {
+    if(nums[i] == 0) {
+      nums.erase(nums.begin() + i);
+      count++;
+    }
+    else { i++; }
+  }
+  /* add 0s at the end */
+  for(int i = 0; i < count; i++) {
+    nums.push_back(0);
+  }
+
+}
+
+int maxSubArray(vector<int>& nums)
+{
+  return -1;
 }

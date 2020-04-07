@@ -7,7 +7,9 @@ using namespace std;
 
 int main()
 {
-  bool isH = isHappy(2);
-  cout << "isHappy: " << (isH == 1 ? "true" : "false") << '\n';
+  vector<int> nums = {0,0,1};
+  moveZeroes(nums);
+  cout << '\n';
+  print_arr(nums);
   return 0;
 }
