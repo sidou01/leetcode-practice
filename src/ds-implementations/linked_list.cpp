@@ -2,16 +2,6 @@
 
 using namespace std;
 
-// class ListNode {
-//     public:
-//     int value;
-//     ListNode *next;
-//     ListNode() {
-//         value = NULL;
-//         next = NULL;
-//     }
-    
-// };
 struct ListNode {
     int value;
     ListNode* next;
@@ -130,5 +120,3 @@ int main() {
 
     return 0;
 }
-
-// Linked list leetcode problems.
