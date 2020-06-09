@@ -185,3 +185,40 @@ int maxSubArray(vector<int>& nums)
 {
   return -1;
 }
+
+vector<int> sortedSquares(vector<int> &A) {
+    vector<int> result;    
+    int i = 0;
+    while(i < A.size() && A[i] < 0)
+        i++;
+
+    int j = i - 1;
+
+    while(i < A.size() && j >= 0)
+    {
+        if(A[i] * A[i] < A[j] * A[j])
+        {
+            result.push_back(A[i] * A[i]);
+            i++;
+        }
+        else
+        {
+            result.push_back(A[j] * A[j]);
+            j--;    
+        }
+    }
+
+    while(i < A.size())
+    {
+        result.push_back(A[i] * A[i]);
+        i++;
+    }
+    while(j >= 0)
+    {
+        result.push_back(A[j] * A[j]);
+        j--;
+    }
+        
+
+    return result;
+    }
