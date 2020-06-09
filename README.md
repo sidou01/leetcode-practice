@@ -16,6 +16,7 @@ This repo is mainly used as a reference of implementations for leetcode problems
 | Single Number                                        | [#136](https://leetcode.com/problems/single-number)                                         | Easy      |
 | Happy Number                                         | [#202](https://leetcode.com/problems/happy-number)                                          | Easy      |
 | Move Zeroes                                          | [#283](https://leetcode.com/problems/move-zeroes/)                                          | Easy      |
+| Squares of a Sorted Array                            | [#977](https://leetcode.com/problems/squares-of-a-sorted-array/)                            | Easy      |
 
 # Disclaimer
 

@@ -218,7 +218,6 @@ vector<int> sortedSquares(vector<int> &A) {
         result.push_back(A[j] * A[j]);
         j--;
     }
-        
 
     return result;
-    }
+}
