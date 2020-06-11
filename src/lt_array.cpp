@@ -221,3 +221,19 @@ vector<int> sortedSquares(vector<int> &A) {
 
     return result;
 }
+
+vector<bool> kidsWithCandies(vector<int> &candies, int extraCandies) {
+    vector<bool> output;
+    int maxCandies = 0;
+    for(int j = 0; j < candies.size(); j++)
+        if(maxCandies < candies[j]) 
+            maxCandies = candies[j];
+    
+    for(int i = 0; i < candies.size(); i++)
+    {
+        if((candies[i] + extraCandies) >= maxCandies) output.push_back(true);
+        else output.push_back(false);
+    }
+    
+    return output;
+}
