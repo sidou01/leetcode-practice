@@ -22,4 +22,4 @@ This repo is mainly used as a reference of implementations for leetcode problems
 # Disclaimer
 
 The content in this repo showcases my journey of learning Algorithms and Data Structures
-which means the solutions in this repo are probably not optimal and may not follow the best practices. So if anyone likes to improve a solution or contribute a better one it would not only help me but also anyone who comes across this repo.
+which means the solutions in this repo are probably not optimal and may not follow the best practices. So if anyone likes to improve a solution or contribute it would not only help me but also anyone who comes across this repo.
