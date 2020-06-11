@@ -1,8 +1,8 @@
-# Leetcode Problems
+# Algorithms and Data Structures
 
 This repo is mainly used as a reference of implementations for leetcode problems in different programming languages sorted by data structure.
 
-## Arrays
+## Algorithms 
 
 | Problem                                              | Link                                                                                        | Diffculty |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------- | --------- |
@@ -18,6 +18,13 @@ This repo is mainly used as a reference of implementations for leetcode problems
 | Move Zeroes                                          | [#283](https://leetcode.com/problems/move-zeroes/)                                          | Easy      |
 | Squares of a Sorted Array                            | [#977](https://leetcode.com/problems/squares-of-a-sorted-array/)                            | Easy      |
 | Kids With the Greatest Number of Candies             | [#1431](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)            | Easy      |
+
+## Data Structures
+
+| Name  | Implementation |   
+|-------|----------------|
+| Linked List | [1](https://github.com/sidou01/leetcode-practice/blob/master/src/ds-implementations/linked_list.cpp) |
+
 
 # Disclaimer
 
