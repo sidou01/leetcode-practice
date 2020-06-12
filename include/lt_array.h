@@ -10,6 +10,7 @@ int findNumbers(std::vector<int>& nums);
 int dominantIndex(std::vector<int>& nums);
 int singleNumber(std::vector<int>& nums);
 int maxSubArray(std::vector<int>& nums);
+int removeDuplicates(std::vector<int> &nums);
 
 std::vector<int> twoSum(std::vector<int> nums, int target);
 std::vector<int> twoSum_v2(std::vector<int>& nums, int target);

@@ -18,6 +18,7 @@ This repo is mainly used as a reference of implementations for leetcode problems
 | Move Zeroes                                          | [#283](https://leetcode.com/problems/move-zeroes/)                                          | Easy      |
 | Squares of a Sorted Array                            | [#977](https://leetcode.com/problems/squares-of-a-sorted-array/)                            | Easy      |
 | Kids With the Greatest Number of Candies             | [#1431](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)            | Easy      |
+| Remove Duplicates from Sorted Array                  | [#26](https://leetcode.com/problems/remove-duplicates-from-sorted-array)                    | Easy      |
 
 # Disclaimer
 
