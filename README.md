@@ -1,8 +1,8 @@
-# Leetcode Problems
+# Algorithms and Data Structures
 
 This repo is mainly used as a reference of implementations for leetcode problems in different programming languages sorted by data structure.
 
-## Arrays
+## Algorithms 
 
 | Problem                                              | Link                                                                                        | Diffculty |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------- | --------- |
@@ -20,7 +20,14 @@ This repo is mainly used as a reference of implementations for leetcode problems
 | Kids With the Greatest Number of Candies             | [#1431](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)            | Easy      |
 | Remove Duplicates from Sorted Array                  | [#26](https://leetcode.com/problems/remove-duplicates-from-sorted-array)                    | Easy      |
 
+## Data Structures
+
+| Name  | Implementation |   
+|-------|----------------|
+| Linked List | [1](https://github.com/sidou01/leetcode-practice/blob/master/src/ds-implementations/linked_list.cpp) |
+
+
 # Disclaimer
 
 The content in this repo showcases my journey of learning Algorithms and Data Structures
-which means the solutions in this repo are probably not optimal and may not follow the best practices. So if anyone likes to improve a solution or contribute a better one it would not only help me but also anyone who comes across this repo.
+which means the solutions in this repo are probably not optimal and may not follow the best practices. So if anyone likes to improve a solution or contribute it would not only help me but also anyone who comes across this repo.
