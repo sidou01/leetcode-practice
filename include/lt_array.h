@@ -4,6 +4,7 @@ void print_arr(std::vector<int>& nums);
 void moveZeroes(std::vector<int>& nums);
 
 bool isHappy(int number);
+bool checkIfExist(std::vector<int> &arr);
 
 int pivotIndex(std::vector<int> nums);
 int findNumbers(std::vector<int>& nums);

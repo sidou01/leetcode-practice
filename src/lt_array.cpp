@@ -251,3 +251,24 @@ int removeDuplicates(vector<int> &nums) {
 
     return i + 1;
 }
+
+
+bool checkIfExist(vector<int> &arr) {
+    sort(arr.begin(), arr.end());
+    for(int i = 0; i < arr.size(); i++) {
+        int target = arr[i] * 2;
+        int begin = 0;
+        int end = arr.size() - 1;
+        int mid = (begin + end) / 2;
+        
+        while(begin <= end) {
+            if(arr[mid] == target && mid != i) return true;
+            else if(arr[mid] > target) end = mid - 1;
+            else begin = mid + 1;
+
+            mid = (begin + end) / 2;
+        }
+     }
+
+     return false;
+}
